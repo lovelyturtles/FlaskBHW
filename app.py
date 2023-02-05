@@ -1,9 +1,5 @@
 from flask import Flask, render_template, request
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+
 
 ## TO DOS / COMMENTS
 """ 
