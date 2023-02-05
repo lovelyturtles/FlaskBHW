@@ -34,6 +34,12 @@ def doctor_locator():
     return render_template("find_a_doctor.html", zip = location)
 
 ## dynamic URL to route to a new HTML that displays the location's
+
+## renders the home page 
+@views.route("/index")
+def index(): 
+    return render_template("index.html")
+
 # recommended doctors
 @views.route("/find_a_doctor/<location>")
 def doctor_located(location): 

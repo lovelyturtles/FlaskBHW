@@ -21,13 +21,26 @@ a {
 }
 
 
-.nav {
+nav {
   text-align: right;
   padding: 0 60px 20px 60px;
 }
 
-.nav a {
+nav a {
   padding: 0 20px;
+  font-size: 20px;
+  color: black;
+}
+
+footer {
+  background-color: #333333;
+  color: black;
+  padding: 30px 0;
+  
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+  top: 85%;
 }
 
 /*.main-img {
@@ -37,14 +50,27 @@ a {
 
 }*/
 
+.title,.subtitle {
+  text-align: center;
+}
+
+h1 {
+  font-size: 65px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.subtitle {
+  text-align: center;
+}
+
 /*for find a doctor page 'index'*/
 
 .zipcode {
   font-size: 24px;
   text-align: center;
-  padding: 0 60px;
+  padding: 10px 60px 0px 60px;
   font-family: Imprima;
-  
 }
 
 .zipcode button{
@@ -79,11 +105,11 @@ a {
 .image {
   flex-basis: 40%;
   float: left;
-  padding: 0 40px;
+  padding: 0px 40px 30px 40px;
 }
 
 .text {
-  padding: 0 20px;
+  padding: 60px 60px;
   font-size: 24px;
 }
 
@@ -94,20 +120,22 @@ a {
   text-align: center;
   max-width: 940px;
   font-size: 24px;
+  padding: 40px 0;
 }
 
 .three-stats {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
+  
   
 }
 
 .three-stats .stat {
   display: inline-block;
   width:300px;
-  height: 200px;
+  height: 150px;
   padding: 30px 30px;
   font-size: 24px;
 }

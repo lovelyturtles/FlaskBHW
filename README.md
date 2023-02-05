@@ -13,3 +13,13 @@ Our Black Wings Hacks project is a website which allows women to enter their zip
 - Version control: Github
 - Frameworks: Flask
 - Languages: Python, HTML/CSS
+
+### Project Goal:
+Women (particularly Black and POC) are often treated unfairly in the healthcare industry, subject to implicit bias. Our search engine finds physicians rated highly by women for women based on zip code and specialty. In the healthcare industry, treatment is personal, and our goal is to make the process as fair as possible.
+
+### Project Components:
+- Mock-up created using Figma
+- Front-end built using HTML/CSS
+- Back-end built using Python/Flask
+- Zip code lookup tool on landing page
+- Web scraper in progress

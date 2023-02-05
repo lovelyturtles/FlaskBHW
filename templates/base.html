@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Doctors for Her</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.google.com/specimen/Imprima" rel="stylesheet">
@@ -14,10 +15,9 @@
   </head>
   <body>
   
-    <div>
+    <div class="subtitle">
         <h2>Recommended by Women for Women</h2>
     </div>
-
     <div class="nav">
         <a href="{{ url_for('doctor_locator') }}">Find a doctor</a>
         <a href="{{ url_for('learn_more') }}">Learn More</a>
@@ -26,4 +26,9 @@
     
     {% endblock %}
   </body>
+  <footer>
+    <div class="container">
+      <p>&copy Doctors for Her 2023</p>
+    </div>
+  </footer>
 </html>
