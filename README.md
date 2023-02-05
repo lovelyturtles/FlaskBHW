@@ -16,7 +16,7 @@ Input these commands into the terminal (make sure you have pip or pip3 installed
 - Anna Poon (back-end developer)
 - Susie Kihaile (back-end developer)
 - Kaya Lee (front-end developer)
-- Autumn Bertram (front-end developer)
+- Autumn Bertram (front-end developer, UI designer)
 
 ### Techologies used:
 - Version control: Github
