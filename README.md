@@ -35,4 +35,3 @@ Women (particularly Black and POC) are often treated unfairly in the healthcare 
 
 ### Our Video Submission
 https://youtu.be/bAWOwrk9V60
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bAWOwrk9V60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
