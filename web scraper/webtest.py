@@ -35,15 +35,9 @@ for i in range(len(name_tags)):
     else:
         x = x
         # move onto next physician url
-        
 # selects name by index on review page
 # loops through all first names and compare to list of women's names
 # adds reviewer name and rating to array if in list of names
-
-#number_tags = doc.find_all(type="button", class_ = "summary-standard-phone-link")
-#btn_text = number_tags.text
-# stuck on this one; might need to use selenium??
-# need to toggle button to get information...
 
 dr_tag = doc.find("h1").text
 # extracts dr name from page
@@ -64,13 +58,9 @@ dict = {"Doctor Name": dr_tag, "Specialty": spec_tag, "Average Women Rating": av
 
 print(dict)
 
-# want to:
-# extract reviewer name, compare to list of women's names
-# if it's a women's name, add to dict?
-
-# next step: 
-# (1) figure out how parse multiple webpages
-
+#  next step: 
+# (1) parse multiple webpages
+# (2) integrate with rest of website
 
 # .find() returns first result
 # .find_all() returns all results matching query
