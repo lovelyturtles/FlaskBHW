@@ -2,40 +2,41 @@
 
 <!-- need to figure out how to add title to the boilerplate html-->
 
-
-<div><h1>Name of Page</h1></div>
-<div><h2>Recommended by Women for Women</h2></div>
-
-<div class="title"><h2>Doctors for Her</h2></div>
-
+<div class="title">
+    <h1>Doctors for Her</h1>
+</div>
 <div>
+    <h2>Recommended by Women for Women</h2>
+</div>
+
+<div class="nav">
     <a href = "/views/find_a_doctor">Find a Doctor</a>
     <a href = "/views/learn_more">Learn More</a>
 </div>
-<img src="https://static.vecteezy.com/system/resources/previews/000/395/356/original/group-of-strong-women-vector.jpg" alt="three women"
-width=500px height=550px>
+
+<div class="how-to">
+    <img class="main-img" src="https://static.vecteezy.com/system/resources/previews/000/395/356/original/group-of-strong-women-vector.jpg" alt="three women">
 
 
-<div class = "tutorial">
-
-<div>
-    <h3>How to use this website:</h3>
-    <ol>
-        <li>Enter your zipcode</li>
-        <li>Select the doctor right for you knowing they come recommended by other women</li>
-        <li>Share your experience with your friends!</li>
-    </ol>
+    <div class = "tutorial">
+        <h3>How to use this website:</h3>
+        <ol>
+            <li>Enter your zipcode</li>
+            <li>Select the doctor right for you knowing they come recommended by other women</li>
+            <li>Share your experience with your friends!</li>
+        </ol>
+    </div>
 </div>
-
-
 <!--need to route this to the correct location for the located doctors-->
-<form action="/views" method="get" id="locator">
-    <label for="zip"> Enter your zipcode to find doctors recommended by women for women in your area:</label>
-    <br><br>
-    <input type="text" id="zip" name="zip-code">
-    <br><br>
-</form>
-    
-<button type="submit" form="locator" value="Submit">enter</button>
-
+<div class="zipcode">
+    <form action="/views" method="get" id="locator">
+        <label for="zip"> Enter your zipcode to find doctors recommended by women for women in your area:</label>
+        <br><br>
+        <input type="text" id="zip" name="zip-code">
+        <br><br>
+    </form>
+        
+    <button type="submit" form="locator" value="Submit">enter</button>
+</div>
+<br><br>
 {% endblock %}
