@@ -3,7 +3,7 @@
 ### Description: 
 Our Black Wings Hacks project is a website which allows women to enter their zipcodes and find doctors near them who are recommended by other women. 
 
-### Running the project
+### Running the project:
 Input these commands into the terminal (make sure you have pip or pip3 installed):
 - sudo -H pip3 install virtualenv
 - virtualenv env
