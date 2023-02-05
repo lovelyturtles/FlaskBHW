@@ -2,18 +2,6 @@
 
 <!-- need to figure out how to add title to the boilerplate html-->
 
-<div class="title">
-    <h1>Doctors for Her</h1>
-</div>
-<div>
-    <h2>Recommended by Women for Women</h2>
-</div>
-
-<div class="nav">
-    <a href = "/views/find_a_doctor">Find a Doctor</a>
-    <a href = "/views/learn_more">Learn More</a>
-</div>
-
 <div class="container">
     <div class="image">
         <img class="main-img" src="https://static.vecteezy.com/system/resources/previews/000/395/356/original/group-of-strong-women-vector.jpg" alt="three women">
@@ -28,16 +16,66 @@
         </ol>
     </div>
 </div>
+
 <!--need to route this to the correct location for the located doctors-->
 <div class="zipcode">
-    <form action="/views" method="get" id="locator">
-        <label for="zip"> Enter your zipcode to find doctors recommended by women for women in your area:</label>
-        <br><br>
-        <input type="text" id="zip" name="zip-code">
-        <br><br>
+    <!-- GeeksForGeeks -->
+    Enter your zipcode to find doctors that will take you seriously:
+    <form method="post" id="zip_form">
+        <input type="text" name="zip_code" id="zip_code"><br/>
+        <button type="submit">submit</button>
     </form>
-        
-    <button type="submit" form="locator" value="Submit">enter</button>
 </div>
-<br><br>
+
+<!-- table of doctors near you -->
+<table id="doctor_table">
+    <tr id="doctor_table_header_row"></tr>
+    <tbody id="doctor_table_body"></tbody>
+</table>
+<br/><br/>
+
+<!--Jquery Cdn ( GeeksForGeeks ) -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).on('submit','#zip_form',function(e){
+        console.log('hello');
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            url:'/',
+            data:{
+                zip_code:$("#zip_code").val()
+            },
+            success:function(data){
+                let headings = ["Doctor Name", "Specialty", "Rating From Women", "Address", "Distance from You"]
+                let doc_data = [
+                    ["Dr. Hellen Klein", "Heart Surgeon", "4/5", "417 Wentworth Place", "4.2 km"],
+                    ["Dr. Bailey Nadarian", "Internal Medicine", "3/5", "633 West Lake", "4.6 km"],
+                    ["Dr. Louise Rutger", "Family Doctor", "3/5", "31 East 34th", "4.6 km"],
+                    ["Dr. Bruce Ratchet", "Neurosurgeon", "2/5", "22 Island Lakes", "6.6 km"],
+                    ["Dr. Elaina Clark", "Orthopedics", "2/5", "82 Disley Circle", "7.0 km"]
+                ]
+
+                for(i = 0; i < headings.length; i++){
+                    $('<th>').append(headings[i])
+                        .appendTo('table tr');
+                }
+
+                for(i = 0; i < doc_data.length; i++){
+                    console.log(doc_data[i][0]);
+                    $('<tr>').append($('<td>').append(doc_data[i][0]))
+                        .append($('<td>').append(doc_data[i][1]))
+                        .append($('<td>').append(doc_data[i][2]))
+                        .append($('<td>').append(doc_data[i][3]))
+                        .append($('<td>').append(doc_data[i][4]))
+                        .appendTo('table tbody');
+                }                    
+            }
+        })
+    });
+</script>
+
 {% endblock %}
