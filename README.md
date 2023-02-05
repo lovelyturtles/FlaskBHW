@@ -3,6 +3,16 @@
 ### Description: 
 Our Black Wings Hacks project is a website which allows women to enter their zipcodes and find doctors near them who are recommended by other women. 
 
+### Running the project
+- open your terminal (make sure you have pip or pip3 installed)
+#### Input these commands into the terminal
+- sudo -H pip3 install virtualenv
+- virtualenv env
+- source env/bin/activate
+- pip3 install flask flask-sqlalchemy
+- python3 app.py
+- you can then type in localhost:5000 into your web browser to see our site
+
 ### Team:
 - Anna Poon (back-end developer)
 - Susie Kihaile (back-end developer)
