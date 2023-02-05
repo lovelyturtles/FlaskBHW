@@ -7,28 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.google.com/specimen/Imprima" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')
-    }}">
-     {% block head %}{% endblock %}
+    }}"> 
+    <div class="title"><h1>Doctors for Her</h1></div>
+    {% block head %}
+    
+    {% endblock %}
   </head>
   <body>
-    <div class="title">
-      <h1>Doctors for Her</h1>
-    </div>
+  
     <div class="subtitle">
-      <h2>Recommended by Women for Women</h2>
+        <h2>Recommended by Women for Women</h2>
     </div>
-
-    <nav>
-      <a href="/views/index">Home</a>
-
-      <a href = "/views/find_a_doctor">Find a Doctor</a>
-      
-      <a href = "/views/learn_more">Learn More</a>
-    </nav>
-    {% block body %}{% endblock %}
-
-
-
+    <div class="nav">
+        <a href="{{ url_for('doctor_locator') }}">Find a doctor</a>
+        <a href="{{ url_for('learn_more') }}">Learn More</a>
+    </div>
+    {% block body %}
+    
+    {% endblock %}
   </body>
   <footer>
     <div class="container">
