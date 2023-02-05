@@ -32,3 +32,6 @@ Women (particularly Black and POC) are often treated unfairly in the healthcare 
 - Back-end built using Python/Flask
 - Zip code lookup tool on landing page
 - Web scraper in progress
+
+### Our Video Submission
+https://youtu.be/bAWOwrk9V60
